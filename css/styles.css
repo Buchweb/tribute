@@ -1,0 +1,110 @@
+* {
+  /* outline: 20px solid pink; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  size: 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.whole {
+  max-width: 100%;
+}
+
+main {
+  background-image: linear-gradient(
+      -100deg,
+      rgba(255,245,228, 0.5),
+      rgba(22,33,62, 0.5)
+    );
+  min-height: 100vh;
+  margin: 20;
+  border-radius: 5px;
+  display: flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+#title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1em 4em 0.5em;
+  line-height: 40px;
+  margin-bottom: 1em;
+  color: black;
+}
+#img-div {
+  max-width: 100%;
+}
+#image {
+  max-width: 100%;
+  min-width: 30%;
+  width: 30%;
+  object-fit: contain;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 650px) {
+  main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    flex-flow: column nowrap;
+  }
+
+  #title {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
+#image:hover {
+  -moz-box-shadow: 0px 8px 24px black;
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 8px 24px hsl(185deg 74% 27%);
+  box-shadow: 0px 8px 24px black;
+}
+#img-caption {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 25px auto 0 auto;
+  font-weight: 700;
+  color: black;
+  padding: 1em 0;
+}
+#tribute-info {
+  font-size: 1.5rem;
+  text-align: start;
+  padding: 1em 2em;
+  color: black;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+/* styling the attribution */
+.attribution {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  padding: 40px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  cursor: pointer;
+}
